@@ -11,21 +11,21 @@ Attributes
 #### wordpress::default
 ```json
 "wordpress": {
-  "destination_path"  => "..",
-  "ownership" => {
-    "user"  => "..",
-    "group" => ".."
+  "destination_path": "..",
+  "ownership": {
+    "user": "..",
+    "group": ".."
   },
-  "database" => {
-    "db_name"      => "..",
-    "db_user"      => "..",
-    "db_password"  => "..",
-    "db_host"      => "..",
-    "db_charset"   => "utf8",
-    "db_collate"   => "",
-    "table_prefix" => "wp_"
+  "database": {
+    "db_name": "..",
+    "db_user": "..",
+    "db_password": "..",
+    "db_host": "..",
+    "db_charset": "utf8",
+    "db_collate": "",
+    "table_prefix": "wp_"
   },
-  "wp_debug" => false
+  "wp_debug": false
 }
 ```
 attributes names are the same you can find in wp-config.php
@@ -42,21 +42,21 @@ Just include `wordpress` in your node's `run_list`:
     "recipe[wordpress]"
   ],
   "wordpress": {
-    "destination_path"  => "..",
-    "ownership" => {
-      "user"  => "..",
-      "group" => ".."
+    "destination_path": "..",
+    "ownership": {
+      "user": "..",
+      "group": ".."
     },
-    "database" => {
-      "db_name"      => "..",
-      "db_user"      => "..",
-      "db_password"  => "..",
-      "db_host"      => "..",
-      "db_charset"   => "utf8",
-      "db_collate"   => "",
-      "table_prefix" => "wp_"
+    "database": {
+      "db_name": "..",
+      "db_user": "..",
+      "db_password": "..",
+      "db_host": "..",
+      "db_charset": "utf8",
+      "db_collate": "",
+      "table_prefix": "wp_"
     },
-    "wp_debug" => false
+    "wp_debug": false
   }
 }
 ```
